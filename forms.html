@@ -6,8 +6,10 @@
 <h1>Welcome</h1>
 <p>Fill your information</p>
 
+<button onclick="mula()"> START </button>
 
-<form action "index.php" method "POST" style="background-color:#8FBC8F; color:black">
+<br>
+<form onsubmit="hantaq()" style="background-color:#8FBC8F; color:black">
 
 <frameset><legend>Your Info</legend>
      <label for "name">Name</label>
@@ -68,7 +70,22 @@
 	 
 	 
 	 
-</form>
-	  
-</head>
+<form>
+
+<script>
+alert("Selamat Datang");
+function mula(){
+     alert("Boleh mula isi borang.Tunggu apa lagi");
+	 }
+function hantaq(){ 
+    var name = document.getElementById("name").value;
+	var Phone = document.getElementById("Phone").value;
+    alert ("Terima kasih" + name + "kami akan menghubungi anda di " + Phone);
+     }	
+	 
+</script>
+
+
+
+</body>
 </html>
